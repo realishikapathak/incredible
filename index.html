@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incredible India</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-image: url('https://images.unsplash.com/photo-1524492412937-b28074a5d7da?q=80&w=3271&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+        header h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            text-shadow: 2px 2px 4px #000;
+        }
+        header p {
+            font-size: 1.5rem;
+            margin-top: 1rem;
+        }
+        nav {
+            background-color: #ff5722;
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 0.75rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffccbc;
+        }
+        main {
+            padding: 2rem 1rem;
+        }
+        section {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        section h2 {
+            border-bottom: 3px solid #ff5722;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+        .image-gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 1rem;
+            margin-top: 2rem;
+        }
+        footer p {
+            margin: 0;
+        }
+        .highlight {
+            background-color: #ffccbc;
+            padding: 0.2rem 0.5rem;
+            border-radius: 5px;
+        }
+        .festival-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        .cuisine-gallery img, .monument-gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Incredible India</h1>
+        <p>Experience the beauty, diversity, and culture of India!</p>
+    </header>
+    <nav>
+        <a href="#greetings">Greetings</a>
+        <a href="#festivals">Festivals</a>
+        <a href="#cuisines">Cuisines</a>
+        <a href="#monuments">Monuments</a>
+        <a href="#nature">Nature</a>
+        <a href="#culture">Culture</a>
+    </nav>
+    <main>
+        <section id="greetings">
+            <h2>Greetings</h2>
+            <p>India welcomes you with its iconic <span class="highlight">"Namaste"</span>, symbolizing respect and hospitality. Feel the warmth of its people as you journey across this incredible land.</p>
+        </section>
+        <section id="festivals">
+            <h2>Festivals of India</h2>
+            <div class="festival-list">
+                <div>
+                    <h3>Diwali</h3>
+                    <p>The Festival of Lights symbolizes the victory of light over darkness.</p>
+                </div>
+                <div>
+                    <h3>Holi</h3>
+                    <p>The Festival of Colors celebrates joy and togetherness.</p>
+                </div>
+                <div>
+                    <h3>Eid</h3>
+                    <p>A celebration of unity, devotion, and sharing.</p>
+                </div>
+                <div>
+                    <h3>Durga Puja</h3>
+                    <p>A festival dedicated to the goddess Durga, showcasing grandeur and devotion.</p>
+                </div>
+            </div>
+        </section>
+        <section id="cuisines">
+            <h2>Cuisines & Food</h2>
+            <p>Indian cuisine is a feast for the senses. Explore its diverse flavors:</p>
+            <div class="cuisine-gallery">
+                <img src="https://source.unsplash.com/400x300/?indian,food" alt="Indian Food">
+                <img src="https://source.unsplash.com/400x300/?curry,spices" alt="Curry">
+                <img src="https://source.unsplash.com/400x300/?biryani,food" alt="Biryani">
+            </div>
+        </section>
+        <section id="monuments">
+            <h2>Monuments</h2>
+            <p>India's monuments are a testament to its rich history:</p>
+            <div class="monument-gallery">
+                <img src="https://source.unsplash.com/400x300/?tajmahal" alt="Taj Mahal">
+                <img src="https://source.unsplash.com/400x300/?hawa-mahal" alt="Hawa Mahal">
+                <img src="https://source.unsplash.com/400x300/?qutub-minar" alt="Qutub Minar">
+            </div>
+        </section>
+        <section id="nature">
+            <h2>Nature & Wildlife</h2>
+            <p>Explore India's stunning landscapes and diverse wildlife:</p>
+            <ul>
+                <li>The majestic Himalayas for adventure and serenity.</li>
+                <li>The lush backwaters of Kerala.</li>
+                <li>Ranthambore National Park for tiger safaris.</li>
+            </ul>
+        </section>
+        <section id="culture">
+            <h2>Culture & Traditions</h2>
+            <p>India's culture is a vibrant mix of traditions, art, and music. From classical dance forms like Bharatanatyam to the soulful tunes of Hindustani music, immerse yourself in its artistic brilliance.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Incredible India | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
